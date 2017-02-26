@@ -166,7 +166,9 @@ broTrainer.showPlayerPos = () => {
 }
 broTrainer.sendIntoChat = (text) => {
 	gPlayer.chatText.text += text;
-	network.sendMsg(text);
+	for(let i = 0; i <= text.length - 1; i++) {
+		network.sendMsg(text[i]);
+	}
 }
 
 //EVENTS 
