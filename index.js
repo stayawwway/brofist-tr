@@ -12,7 +12,6 @@ broTrainer.playerFly = false;
 broTrainer.playerSpeed = 300;
 broTrainer.playerSkin = parseInt(document.getElementsByClassName("skins")[0].children[1].getAttribute("id"));
 
-broTrainer.magicEnabled = false;
 broTrainer.shitEnabled = false; //suka, bl9, za4em!? 
 
 broTrainer.playerStatus = '2CH POWER'; //rofl again 
@@ -87,26 +86,6 @@ broTrainer.wrapPlayerMove = () => { //TODO bind context and arrow func
 broTrainer.changePlayerSpeed = (speed) => {
     if (!broTrainer.moveWrapped) broTrainer.wrapPlayerMove();
     broTrainer.playerSpeed = speed;
-}
-
-//MAGIC 
-broTrainer.doMagic = (timeout) => {
-    if (broTrainer.playerSkin < 7)
-        broTrainer.changePlayerSkin(broTrainer.playerSkin + 1);
-    else
-        broTrainer.changePlayerSkin(0);
-    if (broTrainer.magicEnabled)
-        setTimeout(() => {
-            broTrainer.doMagic(timeout);
-        }, timeout);
-}
-broTrainer.startMagic = (timeout) => {
-    broTrainer.magicEnabled = true;
-    if (timeout && timeout < 500) timeout = 500; //min 
-    broTrainer.doMagic(timeout || 1000);
-}
-broTrainer.stopMagic = () => {
-    broTrainer.magicEnabled = false;
 }
 
 //SHIT 
@@ -224,14 +203,6 @@ broTrainer.pressEvent = (event) => {
                     case 'name':
                         {
                             broTrainer.changePlayerName(data);
-                            break;
-                        }
-                    case 'magic':
-                        {
-                            if (data == 'stop')
-                                broTrainer.stopMagic();
-                            else
-                                broTrainer.startMagic(data);
                             break;
                         }
                     case 'shit':
