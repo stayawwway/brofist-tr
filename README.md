@@ -1,33 +1,34 @@
-# brofist-tr
-Simple trainer. Небольшой хак (?).
+п»ї# brofist-tr
+Simple trainer. РќРµР±РѕР»СЊС€РѕР№ С…Р°Рє (?).
+
+###РљРѕРјР°РЅРґС‹ (РІРІРѕРґРёС‚СЊ РІ С‡Р°С‚)
+```
+fly							- РІРєР»СЋС‡РёС‚СЊ\РІС‹РєР»СЋС‡РёС‚СЊ РїРѕР»РµС‚ 
+pos							- РїРѕР»СѓС‡РёС‚СЊ СЃРІРѕРё РєРѕРѕСЂРґРёРЅР°С‚С‹ 
+cp		<РЅР°Р·РІР°РЅРёРµ_С‚РѕС‡РєРё> 	- checkpoint СЃРѕС…СЂР°РЅРёС‚СЊ С‚РµРєСѓС‰РёР№, РЅР°РїСЂРёРјРµСЂ cp test1 
+goto 	<РЅР°Р·РІР°РЅРёРµ_С‚РѕС‡РєРё> 	- РїРµСЂРµР№С‚Рё Рє С‡РµРєРїРѕРёРЅС‚Сѓ, РЅР°РїСЂРёРјРµСЂ goto test1 
+tp		<РЅРёРє> 				- С‚РµР»РµРїРѕСЂС‚ РЅР° РёРіСЂРѕРєР° РІ Р·РѕРЅРµ РІРёРґРёРјРѕСЃС‚Рё, РЅР°РїСЂРёРјРµСЂ tp РђРЅСЋС‚Р° 
+tpc 	<x> <y> 			- С‚РµР»РµРїРѕСЂС‚ РїРѕ РєРѕРѕСЂРґРёРЅР°С‚Р°Рј, РЅР°РїСЂРёРјРµСЂ tpc 348 -9 
+name 	<РЅРѕРІС‹Р№_РЅРёРє> 		- РёР·РјРµРЅРёС‚СЊ СЃРІРѕР№ РЅРёРє, РЅР°РїСЂРёРјРµСЂ name test1 
+skin 	<id_СЃРєРёРЅР°> 			- РёР·РјРµРЅРёС‚СЊ СЃРІРѕР№ СЃРєРёРЅ (РѕС‚ 0 РґРѕ 7), РЅР°РїСЂРёРјРµСЂ skin 3 
+shit 	<С‚Р°Р№РјР°СѓС‚ РІ РјСЃ> 		- РЅР°С‡Р°С‚СЊ РґРµР»Р°С‚СЊ СЌС‚Рѕ, РЅР°РїСЂРёРјРµСЂ shit 1000 
+shit 	stop 				- РїСЂРµРєСЂР°С‚РёС‚СЊ РґРµР»Р°С‚СЊ СЌС‚Рѕ 
+status	<С‚РµРєСЃС‚_СЃС‚Р°С‚СѓСЃР°> 	- РґРѕР±Р°РІР»В¤РµС‚ РјРёРіР°СЋС‰РёР№ СЃС‚Р°С‚СѓСЃ РЅР°Рґ РІР°РјРё, РѕС‚РєР»СЋС‡Р°РµС‚СЃСЏ РЅР°Р¶Р°С‚РёРµРј РєР»Р°РІРёС€Рё Enter, РЅР°РїСЂРёРјРµСЂ status 2CH VIP 
+speed 	<С‡РёСЃР»Рѕ> 			- РёР·РјРµРЅРёС‚СЊ СЃРєРѕСЂРѕСЃС‚СЊ (СЃС‚Р°РЅРґР°СЂС‚РЅР°В¤ 300), РЅР°РїСЂРёРјРµСЂ speed 800
+magic 	<С‚Р°Р№РјР°СѓС‚> 			- РјР°РіРёВ¤, С‚Р°Рє Р¶Рµ magic stop
+```
+####РљРѕРјР°РЅРґС‹ РїСЂРѕРїРёСЃС‹РІР°РµС€СЊ Р’ Р§РђРў РР“Р Р« Рё РЅР°Р¶РёРјР°РµС€СЊ Enter. Р‘Р°РєР°.
 
 ### Commands (type in chat)
 ```
-fly - enable\disable fly mode 
-pos - get your position 
-cp <checkpoint_ name> - save checkpoint 
-goto checkpoint_ name> - move to checkpoint 
-tp <name> - teleport to player (didn't works on long range) 
-tpc <x> <y> - teleport to pos 
-speed <number> - change your speed (def. 300) 
-name <new_name> - change your name 
-skin <0-7> - change your skin (min 0, max 7) 
-status <status_string> - change your status 
-```
-
-### Команды (вводить в чат)
-```
-fly - включить\выключить полет 
-pos - получить свои координаты 
-cp <название_точки> - checkpoint сохранить текущий, например cp test1 
-goto <название_точки> - перейти к чекпоинту, например goto test1 
-tp <ник> - телепорт на игрока в зоне видимости, например tp Анюта 
-tpc <x> <y> - телепорт по координатам, например tpc 348 -9 
-name <новый_ник> - изменить свой ник, например name test1 
-skin <id_скина> - изменить свой скин (от 0 до 7), например skin 3 
-shit <таймаут в мс> - начать делать это, например shit 1000 
-shit stop - прекратить делать это 
-status <текст_статуса> - добавляет мигающий статус над вами, отключается нажатием клавиши Enter, например status 2CH VIP 
-speed <число> - изменить скорость (стандартная 300), например speed 800
-magic <таймаут> - магия, так же magic stop
+fly 						- enable\disable fly mode 
+pos 						- get your position 
+cp 		<checkpoint_ name> 	- save checkpoint 
+goto 	<checkpoint_ name> 	- move to checkpoint 
+tp 		<name> 				- teleport to player (didn't works on long range) 
+tpc 	<x> <y> 			- teleport to pos 
+speed 	<number> 			- change your speed (def. 300) 
+name 	<new_name> 			- change your name 
+skin 	<0-7> 				- change your skin (min 0, max 7) 
+status 	<status_string> 	- change your status 
 ```

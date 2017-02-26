@@ -180,10 +180,8 @@ broTrainer.showPlayerPos = () => {
     }, 1000);
 }
 broTrainer.sendIntoChat = (text) => {
-    for (let i = 0; i <= text.length - 1; i++) {
-        gPlayer.chatText.text += text;
-        network.sendMsg(text);
-    }
+	gPlayer.chatText.text += text;
+	network.sendMsg(text);
 }
 
 //EVENTS 
