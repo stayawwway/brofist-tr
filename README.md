@@ -1,6 +1,8 @@
 ﻿# brofist-tr
 Simple trainer. Небольшой хак (?).
 
+[index.js брать отсюда / index.js from here](https://raw.githubusercontent.com/trrx/brofist-tr/master/index.js)
+
 ####Содержимое файла index.js скопировать в консоль (F12 в хроме) и нажать Enter.
 ####Just copy and paste code from index.js into the console and press Enter.
 
