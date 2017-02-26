@@ -1,18 +1,3 @@
-//alert('BROFIST.IO TRAINER, CODED BY ANON312'); 
-//fuck da copyright 
-//version 1.huiznaet.7 
-//COMMANDS (type in chat) 
-//fly - enable\disable fly mode 
-//pos - get your position 
-//cp <checkpoint_ name> - save checkpoint 
-//goto checkpoint_ name> - move to checkpoint 
-//tp <name> - teleport to player (didn't works on long range) 
-//tpc <x> <y> - teleport to pos 
-//speed <number> - change your speed (def. 300) 
-//name <new_name> - change your name 
-//skin <0-7> - change your skin (min 0, max 7) 
-//status <status_string> - change your status 
-//END 
 if (this.broTrainer && this.broTrainer.removeEvents) broTrainer.removeEvents();
 else this.broTrainer = {};
 
