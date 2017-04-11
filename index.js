@@ -10,7 +10,7 @@ broTrainer.checkPoints = {
 
 broTrainer.playerFly = false;
 broTrainer.playerSpeed = 300;
-broTrainer.playerSkin = parseInt(document.getElementsByClassName("skins")[0].children[1].getAttribute("id"));
+broTrainer.playerSkin = 1; //parseInt(document.getElementsByClassName("skins")[0].children[1].getAttribute("id"));
 
 broTrainer.shitEnabled = false; //suka, bl9, za4em!? 
 
